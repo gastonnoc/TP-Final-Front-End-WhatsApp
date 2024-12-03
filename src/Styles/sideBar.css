@@ -1,0 +1,168 @@
+.sidebar {
+    width: 440px;
+    height: 100vh;
+    background-color: var(--background-dark);
+    border-right: 1px solid var(--borders);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.sidebar-header {
+    padding: 5px;
+    color: var(--font-color-sidebar);
+    font-family: 'Helvetica Neue Medium';
+    text-align: left;
+    font-size: 10px;
+    border-bottom: 1px solid var(--borders);
+    letter-spacing: .8px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarHeaderIcons {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.dots {
+    margin: 0 20px 0 25px;
+}
+
+
+
+.contact-list {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+}
+
+li.contact-item:hover {
+    background-color: #504f4f60;
+}
+
+li.contact-item {
+    border-bottom: 1px solid var(--borders);
+    padding-left: 10px;
+    align-items: center;
+}
+
+.contact-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-size: 15px;
+    font-weight: 5600;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.contact-status {
+    font-size: 14px;
+    padding-top: 4px;
+    color: #9c9a9a;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+@media (width: 2560px) {
+    .sidebar {
+        width: 600px;
+        height: 100vh;
+    }
+
+    .sidebar-header {
+        height: 80px;
+    }
+
+    .sidebar-header h1 {
+        font-size: 280%;
+    }
+
+    .contact-item {
+        height: 100px;
+    }
+
+    .contact-list img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-info h4, .contact-info p {
+        font-size: 140%;
+    }
+}
+
+@media (width: 2000px) {
+    .sidebar {
+        width: 600px;
+        height: 100vh;
+    }
+
+    .sidebar-header {
+        height: 80px;
+    }
+
+    .sidebar-header h1 {
+        font-size: 280%;
+    }
+
+    .contact-item {
+        height: 100px;
+    }
+
+    .contact-list img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-info h4, .contact-info p {
+        font-size: 140%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sidebar {
+        width: 400px;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 300px;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .chatScreen .sidebar {
+        display: none;
+    }
+
+    .homeScreen .sidebar {
+        width: 100vw;
+    }
+}
+
